@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Check, X } from 'lucide-react';
 
 const FractionSimplifier = () => {
   const [numerator, setNumerator] = useState('');
@@ -6,6 +7,11 @@ const FractionSimplifier = () => {
   const [steps, setSteps] = useState([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [gcdSteps, setGcdSteps] = useState([]);
+  const [currentGcdStepIndex, setCurrentGcdStepIndex] = useState(-1);
+  const [showAllGcdSteps, setShowAllGcdSteps] = useState(false);
+  const [gcdInputs, setGcdInputs] = useState({});
+  const [gcdInputErrors, setGcdInputErrors] = useState({});
+  const [isNextStepLocked, setIsNextStepLocked] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [simplifiedNum, setSimplifiedNum] = useState(0);
   const [simplifiedDen, setSimplifiedDen] = useState(0);
@@ -13,17 +19,23 @@ const FractionSimplifier = () => {
 
   const handleNumeratorChange = (e) => {
     const value = e.target.value;
-    // Only allow positive integers up to 1000
-    if (value === '' || (parseInt(value) > 0 && parseInt(value) <= 1000)) {
-      setNumerator(value);
+    // Reject non-numeric characters
+    if (value === '' || /^[0-9]+$/.test(value)) {
+      // Only allow positive integers up to 1000
+      if (value === '' || (parseInt(value) > 0 && parseInt(value) <= 1000)) {
+        setNumerator(value);
+      }
     }
   };
 
   const handleDenominatorChange = (e) => {
     const value = e.target.value;
-    // Only allow positive integers up to 1000
-    if (value === '' || (parseInt(value) > 0 && parseInt(value) <= 1000)) {
-      setDenominator(value);
+    // Reject non-numeric characters
+    if (value === '' || /^[0-9]+$/.test(value)) {
+      // Only allow positive integers up to 1000
+      if (value === '' || (parseInt(value) > 0 && parseInt(value) <= 1000)) {
+        setDenominator(value);
+      }
     }
   };
 
@@ -122,7 +134,9 @@ ${den} ÷ ${gcd} = ${simplifiedD}`,
             <div className="flex space-x-2">
               <input
                 id="numeratorInput"
-                type="number"
+                type="text"
+                inputMode="numeric"
+                pattern="[0-9]*"
                 value={numerator}
                 onChange={handleNumeratorChange}
                 placeholder="Numerator"
@@ -130,7 +144,9 @@ ${den} ÷ ${gcd} = ${simplifiedD}`,
               />
               <input
                 id="denominatorInput"
-                type="number"
+                type="text"
+                inputMode="numeric"
+                pattern="[0-9]*"
                 value={denominator}
                 onChange={handleDenominatorChange}
                 placeholder="Denominator"

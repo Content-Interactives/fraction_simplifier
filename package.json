@@ -1,6 +1,7 @@
 {
   "name": "fraction_simplifier",
   "version": "0.1.0",
+  "homepage": "https://timothycruzck12.github.io/fraction_simplifier",
   "private": true,
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.15",
@@ -15,6 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1"
   }

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Check, X } from 'lucide-react';
 
 const FractionSimplifier = () => {
   const [numerator, setNumerator] = useState('');
@@ -7,11 +6,6 @@ const FractionSimplifier = () => {
   const [steps, setSteps] = useState([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [gcdSteps, setGcdSteps] = useState([]);
-  const [currentGcdStepIndex, setCurrentGcdStepIndex] = useState(-1);
-  const [showAllGcdSteps, setShowAllGcdSteps] = useState(false);
-  const [gcdInputs, setGcdInputs] = useState({});
-  const [gcdInputErrors, setGcdInputErrors] = useState({});
-  const [isNextStepLocked, setIsNextStepLocked] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const [simplifiedNum, setSimplifiedNum] = useState(0);
   const [simplifiedDen, setSimplifiedDen] = useState(0);
@@ -128,9 +122,9 @@ ${den} ÷ ${gcd} = ${simplifiedD}`,
   return (
     <div className="w-full max-w-md mx-auto shadow-md bg-white rounded-lg overflow-hidden">
       <div className="p-3 space-y-3">
+        <h2 className="text-[#008545] text-sm font-medium">Simplify Fraction Calculator</h2>
         <div className="space-y-2">
           <div className="flex flex-col space-y-1">
-            <label htmlFor="fractionInput" className="block text-sm font-medium text-gray-700">Fraction to simplify:</label>
             <div className="flex space-x-2">
               <input
                 id="numeratorInput"
@@ -154,7 +148,7 @@ ${den} ÷ ${gcd} = ${simplifiedD}`,
               />
               <button
                 onClick={handleSimplify}
-                className="px-2 bg-green-500 hover:bg-green-600 text-white text-sm py-1 rounded-md transition-colors"
+                className="px-2 bg-[#008545] hover:bg-[#006633] text-white text-sm py-1 rounded-md transition-colors"
               >
                 Simplify
               </button>

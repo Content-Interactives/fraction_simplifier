@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fraction_simplifier/static/css/main.4f6bca22.css",
-    "main.js": "/fraction_simplifier/static/js/main.23230877.js",
+    "main.js": "/fraction_simplifier/static/js/main.c2f8b8f5.js",
     "static/js/453.8af1c956.chunk.js": "/fraction_simplifier/static/js/453.8af1c956.chunk.js",
     "index.html": "/fraction_simplifier/index.html",
     "main.4f6bca22.css.map": "/fraction_simplifier/static/css/main.4f6bca22.css.map",
-    "main.23230877.js.map": "/fraction_simplifier/static/js/main.23230877.js.map",
+    "main.c2f8b8f5.js.map": "/fraction_simplifier/static/js/main.c2f8b8f5.js.map",
     "453.8af1c956.chunk.js.map": "/fraction_simplifier/static/js/453.8af1c956.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f6bca22.css",
-    "static/js/main.23230877.js"
+    "static/js/main.c2f8b8f5.js"
   ]
 }

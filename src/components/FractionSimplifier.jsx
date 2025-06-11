@@ -197,7 +197,9 @@ ${den} ÷ ${gcd} = ${simplifiedD}`,
       `}</style>
       <div className="w-full max-w-md mx-auto shadow-md bg-white rounded-lg overflow-hidden select-none">
         <div className="p-3 space-y-3">
-          <h2 className="text-[#5750E3] text-sm font-medium">Simplify Fraction Calculator</h2>
+          <label className="block text-sm font-medium text-gray-700">
+            Enter a fraction to simplify:
+          </label>
           <div className="space-y-2">
             <div className="flex flex-col space-y-1">
               <div className="flex space-x-2 items-center">

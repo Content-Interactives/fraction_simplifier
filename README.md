@@ -1,81 +1,41 @@
 # Fraction Simplifier
 
-A React application that helps simplify fractions and provides step-by-step explanations of the simplification process.
+The **Fraction Simplifier** interactive helps students practice simplifying fractions to their lowest terms. By entering fractions, students can see how common factors are divided out to produce equivalent, simplified fractions.
 
-## Features
+---
 
-- Simplify fractions to their lowest terms
-- Show step-by-step process of simplification
-- Modern and responsive UI using Tailwind CSS
-- Easy-to-use interface
+## 🔗 Live Interactive
 
-## Technologies Used
+Try it out here:  
+👉 [https://content-interactives.github.io/fraction_simplifier](https://content-interactives.github.io/fraction_simplifier)
 
-- React
-- Tailwind CSS
-- JavaScript
+---
 
-## Getting Started
+## 🌐 Where This Interactive Is Being Used
 
-1. Clone the repository:
-```bash
-git clone https://github.com/YourUsername/fraction_simplifier.git
-```
+This interactive is currently featured in the following locations:
 
-2. Install dependencies:
-```bash
-cd fraction_simplifier
-npm install
-```
+- <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/5d12571f-8e12-4441-98ab-c0bc94069a96" /> **CK-12 Intent Response**  
+  - 👉 PRODUCTION: PENDING  
+  - 👉 MASTER: PENDING  
+- 📘 **CK-12 Flexbooks**
+  - 👉 PENDING
 
-3. Start the development server:
-```bash
-npm start
-```
+---
 
-4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📚 Standards & Subjects
 
-## Available Scripts
+This interactive aligns with the following topics and standards:
 
-- `npm start` - Runs the app in development mode
-- `npm test` - Launches the test runner
-- `npm run build` - Builds the app for production
-- `npm run eject` - Ejects from Create React App
+- **📂 Subject Area**: Middle School Math (Grade 6)  
+- **🧮 Topic**: Fractions and Equivalent Forms  
+- **📏 Common Core**:  
+  - 6.NS.A.1 – Interpret and compute quotients of fractions, and solve word problems involving division of fractions by fractions.  
+  - 6.EE.A.3 – Apply the properties of operations to generate equivalent expressions.
 
-## Contributing
+---
 
-Feel free to submit issues and enhancement requests!
+## 🛠️ Developer Notes
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Built with: React, HTML, CSS, JavaScript  
+- Deployed via GitHub Pages
